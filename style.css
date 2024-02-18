@@ -1,0 +1,171 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+:root {
+  font-size: 16px;
+
+  --bc-primary: ;
+}
+
+a {
+  text-decoration: none;
+}
+
+body {
+  background-image: linear-gradient(270deg, red, aquamarine);
+
+  font-family: 'Ubuntu', sans-serif;
+}
+
+header {
+  padding: 2rem;
+
+  display: flex;
+
+  justify-content: space-between;
+}
+
+nav {
+  font-weight: bold;
+
+  display: flex;
+
+  gap: 1rem;
+}
+
+#contact-button {
+  background-color:salmon;
+
+  color:aliceblue;
+  text-transform: uppercase;
+
+  padding: 1rem;
+  border-radius: 2rem;
+  border: .2rem solid white;
+}
+
+main {
+  display: flex;
+}
+
+#text-button {
+  display: grid;
+
+  padding: 1rem;
+
+  width: 50%;
+}
+
+#text-button h1 {
+  font-size: 6rem;
+
+  text-transform: uppercase;
+
+  color:rgb(19, 3, 63);
+}
+h1 span {
+  color:rgb(62, 153, 228);
+}
+
+#text-button p {
+  background-color: blue;
+  
+  color: white;
+  text-align: center;
+
+  padding-block: 1rem;
+  width: 10rem;
+
+  border-radius: 1rem;
+}
+
+#grid-box {
+  display: grid;
+  gap: 1rem;
+
+  grid-template-columns: 1fr 1fr;
+
+  width: 50%;
+}
+
+#box-one {
+  background-color:blueviolet;
+
+  width: 20rem;
+  height: 30rem;
+
+  border-radius: 1rem;
+
+  justify-self: flex-end;
+
+  position: relative;
+}
+#box-one-element {
+  background-color: aqua;
+  width: 3rem;
+  height: 8.5rem;
+
+  border-radius: 99rem;
+
+  position: absolute;
+  top: -2rem;
+  right: 2.7rem;
+}
+#box-one-element-2 {
+  background-color:aquamarine;
+  width: 3rem;
+  height: 8.5rem;
+
+  border-radius: 99rem;
+
+  position: absolute;
+  top: -2.4rem;
+  right: 3.8rem;
+
+  z-index: -1;
+}
+
+#box-two {
+  background-color:chartreuse;
+
+  width: 15rem;
+  height: 20rem;
+
+  border-radius: 2rem;
+
+  align-self: flex-end;
+  
+  position: relative;
+}
+
+#box-two-circle {
+  background-color:yellow;
+
+  border-radius: 99px;
+  
+  --circle-size: 7rem;
+  width: var(--circle-size);
+  height: var(--circle-size);
+  
+  position: absolute;
+  top: -3rem;
+  right: -2rem;
+}
+#box-two-circle-2 {
+  background-color:darkorange;
+
+  border-radius: 99px;
+  
+  --circle-size: 7rem;
+  width: var(--circle-size);
+  height: var(--circle-size);
+  
+  position: absolute;
+  top: -4.6rem;
+  right: -3.6rem;
+
+  z-index: -1;
+}
